@@ -5,48 +5,48 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name"[(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Roll No</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control"name="rollno"[(ngModel)]="rollno">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Admission</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="admission"[(ngModel)]="admission">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="parentname"[(ngModel)]="parentname">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">College</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="college"[(ngModel)]="college">
                 </div>
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">DOB</label>
-                    <input type="text" class="form-control">
+                    <input type="date" class="form-control" name="dob"[(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="address" id="" cols="30" rows="10" class="form-control"[(ngModel)]="address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Mobile Number</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="mobilenumber"[(ngModel)]="mobilenumber">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Parent Number</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="parentnumber"[(ngModel)]="parentname">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Email Id</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="emailid"[(ngModel)]="emailid">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Blood Group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="bloodgroup" id="" class="form-control" [(ngModel)]="bloodgroup">
                         <option value="">O+</option>
                         <option value="">O-</option>
                         <option value="">A+</option>
@@ -58,7 +58,7 @@
                     </select>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-success">Regsister</button>
+                    <button class="btn btn-success" (click)="readValues()">Regsister</button>
                 </div>
             </div>
         </div>
